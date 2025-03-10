@@ -11,8 +11,15 @@ public class AD_problem{
         }
 
 
+        public static int friendproblem(int n){
+            if(n == 0 || n == 1){return 1; }
+            return TiningProblem(n-1)+(n-1)*TiningProblem(n-2);
+            }
+
+
     public static void main(String[] args) {
-        int n = 4;
-        System.out.println(TiningProblem(n));
+        int n = 3;
+      //  System.out.println(TiningProblem(n));
+        System.out.println(friendproblem(n));
     }
 }
